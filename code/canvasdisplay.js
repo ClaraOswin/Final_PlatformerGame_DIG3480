@@ -67,7 +67,7 @@ CanvasDisplay.prototype.clearDisplay = function() {
   else if (this.level.status == "lost")
     this.cx.fillStyle = "rgb(44, 136, 214)";
   else
-    this.cx.fillStyle = "rgb(25, 25, 112)";
+    this.cx.fillStyle = "rgb(25, 3, 84)";
   this.cx.fillRect(0, 0,
                    this.canvas.width, this.canvas.height);
 
@@ -107,7 +107,7 @@ CanvasDisplay.prototype.drawBackground = function() {
 
 var playerSprites = document.createElement("img");
 playerSprites.src = "img/player.png";
-var playerXOverlap = 4;
+var playerXOverlap = 2;
 
 CanvasDisplay.prototype.drawPlayer = function(x, y, width,
                                               height) {
