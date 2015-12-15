@@ -13,7 +13,7 @@ margin: 0px auto;
 .actor  { position: absolute;  }
 .coin   { background: white; }
 .alien  {background: url("../images/ezgif.com-resize-2.gif"); }
-.player { background: url("../images/ezgif.com-resize.gif"); }
+.player { background: rgb(64,64,64)); }
 
 .game {
   overflow: hidden;

@@ -77,9 +77,9 @@ CanvasDisplay.prototype.clearDisplay = function() {
 
 };
 
-CanvasDisplay.prototype.start = function(){
+/*CanvasDisplay.prototype.start = function(){
   startLevel(n);
-}
+}*/
 
 var otherSprites = document.createElement("img");
 otherSprites.src = "img/sprites.png";
@@ -107,7 +107,7 @@ CanvasDisplay.prototype.drawBackground = function() {
 
 var playerSprites = document.createElement("img");
 playerSprites.src = "img/player.png";
-var playerXOverlap = 2;
+var playerXOverlap = 4;
 
 CanvasDisplay.prototype.drawPlayer = function(x, y, width,
                                               height) {
@@ -118,7 +118,7 @@ CanvasDisplay.prototype.drawPlayer = function(x, y, width,
     this.flipPlayer = player.speed.x < 0;
 
   if (player.speed.y != 0)
-    sprite = 9;
+    sprite = 10;
   else if (player.speed.x != 0)
     sprite = Math.floor(this.animationTime * 12) % 8;
 
